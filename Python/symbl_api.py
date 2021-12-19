@@ -31,7 +31,8 @@ def printData(dataFetchedFromAPI):
 
 def main():
     """
-        Gets the response json and sorts it in ascending order of the column 'id'
+        This function sorts the Response JSON fetched from the API endpoint
+        and sorts it in ascending order of the field id
     """
     data = getDataFromAPI()
     if(data != None):
