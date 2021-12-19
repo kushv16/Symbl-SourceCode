@@ -15,7 +15,7 @@ def getDataFromAPI(endpoint = "https://jsonplaceholder.typicode.com/users/"):
     except requests.exceptions.Timeout as errt:
         print ("Timeout Error:",errt)
     except requests.exceptions.RequestException as err:
-        print ("OOps: Something Else",err)
+        print ("Something went wrong..",err)
     else:
         return dataFetchedFromAPI
 
